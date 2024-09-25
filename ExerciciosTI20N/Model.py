@@ -121,7 +121,66 @@ class Model:
         return resultado
 
     def exercicioQuinze(self, num):
-        resultado = ""
-        tamanho = len(num)
-        soma = 0
-        for i in range(0, tamanho, 1)
+        resto = 0
+        while num / 10 != 0:
+            resto += num % 10
+            num = int(num / 10)
+        return f'A soma dos numeros é {resto}'
+    def exercicioDezesseis(self, num):
+        par = ""
+        impar = ""
+        for i in range(1, num, 1):
+            if i % 2 == 0:
+                par += f'{i}\n'
+            else:
+                impar += f'{i}\n'
+        return f'Pares: {par} \nÍmpares: {impar}'
+
+    def exercicioDezessete(self,num):
+        resultado = " "
+        for i in range(1, num, 1):
+            if i % 2 != 0 and i % 3 != 0 and i % 5 != 0:
+                resultado += f'{i}\n'
+            elif i == 2 or i == 3 or i == 0:
+                resultado += f'{i}\n'
+        return resultado
+
+    def exercicioDezoito(self,num):
+        collatz = []
+        while num > 1:
+            if num % 2 == 0:
+                num = num / 2
+            else:
+                num = 3 * num+1
+            collatz.append(num)
+        return collatz
+
+    def exercicioDezenove(self, num):
+        par = 0
+        impar = 0
+        for i in range(1, num, 1):
+            if i % 2 == 0:
+                par += i
+            else:
+                impar += i
+        return f'Pares: {par} \nÍmpares: {impar}'
+
+    def exercicioVinte(self,num):
+        aux = 0
+        for i in range(1, num, 1):
+            if num % i == 0:
+                aux += i
+
+        if aux == num:
+            return f'O número {num} é um número perfeito'
+        else:
+            return f'O número {num} não é um número perfeito'
+
+    def exercicioVinteUm(self, valorA, valorB):
+        valorC = valorA
+        valorA = valorB
+        valorB = valorC
+        return f'Valor A: {valorA} \nValor B: {valorB}'
+
+    def exercicioVinteDois(self, num):
+        return f'O antecessor do numero digitado é {num - 1}'

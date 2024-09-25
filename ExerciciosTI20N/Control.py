@@ -98,5 +98,30 @@ class Control:
             elif self.opcao == 18:
                 num = int(input('Informe um número: '))
                 print(self.modelo.exercicioQuatorze(num))
+            elif self.opcao == 19:
+                num = int(input('Informe um número: '))
+                print(self.modelo.exercicioQuinze(num))
+            elif self.opcao == 20:
+                num = int(input('Informe um número: '))
+                print(self.modelo.exercicioDezesseis(num))
+            elif self.opcao == 21:
+                num = int(input('Informe um número: '))
+                print(self.modelo.exercicioDezessete(num))
+            elif self.opcao == 22:
+                num = int(input('Informe um número: '))
+                print(self.modelo.exercicioDezoito(num))
+            elif self.opcao == 23:
+                num = int(input('Informe um número: '))
+                print(self.modelo.exercicioDezenove(num))
+            elif self.opcao == 24:
+                num = int(input('Informe um número: '))
+                print(self.modelo.exercicioVinte(num))
+            elif self.opcao == 25:
+                valorA = int(input('Informe um valor para A: '))
+                valorB = int(input('Informe um valor para B: '))
+                print(self.modelo.exercicioVinteUm(valorA, valorB))
+            elif self.opcao == 26:
+                num = int(input('Informe um número: '))
+                print(self.modelo.exercicioVinteDois(num))
             else:
                 print('Opção escolhida não é válida!')
