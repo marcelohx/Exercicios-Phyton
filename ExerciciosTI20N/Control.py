@@ -30,7 +30,27 @@ class Control:
             '\n21. Exercicio Dezessete'       +
             '\n22. Exercicio Dezoito'         +
             '\n23. Exercicio Dezenove'        +
-            '\n24. Exercicio Vinte'           )
+            '\n24. Exercicio Vinte'           +
+            '\n25. Exercicio Vinte Um' +
+            '\n26. Exercicio Vinte Dois' +
+            '\n27. Exercicio Vinte Tres' +
+            '\n28. Exercicio Vinte Quatro' +
+            '\n29. Exercicio Vinte Cinco' +
+            '\n30. Exercicio Vinte Seis' +
+            '\n31. Exercicio Vinte Sete' +
+            '\n32. Exercicio Vinte Oito' +
+            '\n33. Exercicio Vinte Nove' +
+            '\n34. Exercicio Trinta' +
+            '\n35. Exercicio Trinta Um' +
+            '\n36. Exercicio Trinta Dois' +
+            '\n37. Exercicio Trinta Tres' +
+            '\n38. Exercicio Trinta Quatro' +
+            '\n39. Exercicio Trinta Cinco' +
+            '\n40. Exercicio Trinta Seis' +
+            '\n41. Exercicio Trinta Sete' +
+            '\n42. Exercicio Trinta Oito' +
+            '\n43. Exercicio Trinta Nove' )
+
 
     def operacoes(self):
         while(self.opcao != 1):
@@ -123,5 +143,61 @@ class Control:
             elif self.opcao == 26:
                 num = int(input('Informe um número: '))
                 print(self.modelo.exercicioVinteDois(num))
+            elif self.opcao == 27:
+                base = int(input('Informe um valor para a base: '))
+                altura = int(input('Informe um valor para a altura: '))
+                print(self.modelo.exercicioVinteTres(base, altura))
+            elif self.opcao == 28:
+                dia = int(input('Informe dia : '))
+                mes = int(input('Informe mes: '))
+                ano = int(input('Informe ano: '))
+                print(self.modelo.exercicioVinteQuatro(dia, mes, ano))
+            elif self.opcao == 29:
+                totalEleitores = int(input('Informe o total de eleitores : '))
+                votosBrancos = int(input('Informe o total de votos branco: '))
+                votosNulos = int(input('Informe o total de votos nulos: '))
+                votosValidos = int(input('Informe o total de votos validos: '))
+                print(self.modelo.exercicioVinteCinco(totalEleitores, votosBrancos, votosNulos, votosValidos))
+            elif self.opcao == 30:
+                salario = int(input('Informe um valor do salario: '))
+                perReajuste = int(input('Informe a porcentagem do reajuste: '))
+                print(self.modelo.exercicioVinteSeis(salario, perReajuste))
+            elif self.opcao == 31:
+                custoFabrica = int(input('Informe o custo de fabrica : '))
+                print(self.modelo.exercicioVinteSete(custoFabrica))
+            elif self.opcao == 32:
+                notaUm = int(input('Informe a primeira nota: '))
+                notaDois = int(input('Informe a segunda nota: '))
+                notaTres = int(input('Informe a terceira nota: '))
+                print(self.modelo.exercicioVinteOito(notaUm, notaDois, notaTres))
+            elif self.opcao == 33:
+                qtdeMaca = int(input('Informe a quantidade de maçã comprada: '))
+                print(self.modelo.exercicioVinteNove(qtdeMaca))
+            elif self.opcao == 35:
+                salarioFixo = int(input('Informe o salario fixo: '))
+                vendas = int(input('Informe o valor das vendas: '))
+                print(self.modelo.exercicioTrintaUm(salarioFixo, vendas))
+            elif self.opcao == 36:
+                saldo = float(input('Informe o saldo em conta: '))
+                debito = float(input('Informe os debitos: '))
+                credito = float(input('Informe os creditos: '))
+                print(self.modelo.exercicioTrintaDois(saldo, debito, credito))
+            elif self.opcao == 37:
+                num = int(input('Informe um número: '))
+                print(self.modelo.exercicioTrintaTres(num))
+            elif self.opcao == 38:
+                print(self.modelo.exercicioTrintaQuatro())
+            elif self.opcao == 39:
+                print(self.modelo.exercicioTrintaCinco())
+            elif self.opcao == 40:
+                print(self.modelo.exercicioTrintaSeis())
+            elif self.opcao == 41:
+                qtde = int(input('Informe a quantidade de numeros: '))
+                print(self.modelo.exercicioTrintaSete(qtde))
+            elif self.opcao == 42:
+                print(self.modelo.exercicioTrintaOito())
+            elif self.opcao == 43:
+                habitantes = int(input('Informe a quantidade de habitantes: '))
+                print(self.modelo.exercicioTrintaNove(habitantes))
             else:
                 print('Opção escolhida não é válida!')
